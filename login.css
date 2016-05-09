@@ -1,0 +1,32 @@
+#wholePanel{
+    text-align: center;
+}
+#tt{
+    margin-top: 20px;
+    font-family: "Î¢ÈíÑÅºÚ";
+    text-align: center;
+    color: #FE858F;
+    margin-bottom:30px;
+}
+#button{
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 6px 16px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+    background-color: #F88E8B;
+    text-align: center;
+    transition: .2s ease-out;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+}
+#button:hover{
+    background-color: #F45551;
+    color: #fff;
+    text-decoration: none;
+}

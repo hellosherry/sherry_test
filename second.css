@@ -1,0 +1,14 @@
+#wholeText{
+    font-size: 18px;
+    padding:20px;
+}
+#firstP{
+    margin-bottom: 10px;
+}
+#centerP{
+    text-indent: 2rem;
+}
+#endP{
+    margin-top: 10px;
+    text-align: right;
+}

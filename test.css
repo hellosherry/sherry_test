@@ -1,0 +1,12 @@
+.cities{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 30px;
+    height: 30px;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+}
+#db{
+    cursor:pointer;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="GB2312">
+    <title></title>
+    <link href="test.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<form class="user">
+    <div id="holder"></div>
+    <input name="mobile" placeholder="手机号"
+           data-rule="required; mobile"
+           data-rule-mobile="[/^1[3458]\d{9}$/, '请检查手机号格式']"/>
+    <input type="password" id="password" data-rule="密码: required; !digits; length[6~]"
+           data-msg-digits="{0}不能使用纯数字"
+           data-msg-length="{0}至少6位">
+
+    <div id="p2"></div>
+    <button>提交</button>
+</form>
+<div class="cities"><p title="黄浦区,卢湾区,徐汇区,长宁区,静安区,普陀区,闸北区,虹口区,杨浦区,闵行区,宝山区,嘉定区,浦东,金山区,松江区,青浦区,奉贤区,崇明县">
+    黄浦区,卢湾区,徐汇区,长宁区,静安区,普陀区,闸北区,虹口区,杨浦区,闵行区,宝山区,嘉定区,浦东,金山区,松江区,青浦区,奉贤区,崇明县</p></div>
+
+<span id="showPic">show picture</span>
+<img src="b.jpg" style="display: none">
+
+<div id="div#">
+    <input type="text" id="inputId"/>
+</div>
+<select class="selectOptions">
+    <option value="1">aaa</option>
+    <option value="2">bbb</option>
+    <option value="3">ccc</option>
+</select>
+
+<div id="optionText"></div>
+<ul>
+    <li>aaa</li>
+    <li class="a" style="display: none">hello</li>
+    <li>bbb</li>
+    <li class="a" style="display: none">hello</li>
+    <li>ccc</li>
+    <li class="a" style="display: none">hello</li>
+</ul>
+
+<input type="text" id="onTime"/>
+
+<p id="inputText"></p>
+<span id="db">hello dbclick</span>
+
+<label>aaa</label>
+<input type="text"/>
+
+
+<table>
+    <tr>
+        <td>
+            <select>
+                <option value="0">a</option>
+                <option value="1">b</option>
+                <option value="2">c</option>
+            </select>
+            <select>
+                <option>a</option>
+                <option>B</option>
+                <option>c</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <select>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+            <select>
+                <option>a</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+        </td>
+    </tr>
+
+</table>
+<div class="list">
+<button class="hello">hello</button>
+</div>
+
+</body>
+<script src="jquery-2.1.1.js"></script>
+<script src="jquery.validator.js"></script>
+<script src="test.js"></script>
+<script src="US.js"></script>
+</html>
