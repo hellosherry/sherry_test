@@ -3,7 +3,11 @@ hello world
 hello baby
 
 <<<<<<< HEAD
-Creating a new branch is quick AND simple.
+<<<<<<< HEAD
+new commit add
 =======
-Creating a new branch is quick AND simple.
+new commit add
 >>>>>>> feature1
+=======
+new commit add
+>>>>>>> dev
