@@ -2,12 +2,3 @@ hello world
 
 hello baby
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-new commit add
-=======
-new commit add
->>>>>>> feature1
-=======
-new commit add
->>>>>>> dev
