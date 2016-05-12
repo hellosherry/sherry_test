@@ -1,7 +1,13 @@
 hello world
 
-hello baby
+hello babygirl
 
+<<<<<<< HEAD
+new commit add
+
+I have a bug to fix
+=======
+>>>>>>> issue-101
 new commit add
 
 I have a bug to fix
