@@ -6,18 +6,25 @@
     <link href="test.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<form class="user">
-    <div id="holder"></div>
-    <input name="mobile" placeholder="手机号"
-           data-rule="required; mobile"
-           data-rule-mobile="[/^1[3458]\d{9}$/, '请检查手机号格式']"/>
-    <input type="password" id="password" data-rule="密码: required; !digits; length[6~]"
-           data-msg-digits="{0}不能使用纯数字"
-           data-msg-length="{0}至少6位">
+<!--<form class="user">-->
 
-    <div id="p2"></div>
-    <button>提交</button>
-</form>
+    <!--<div>-->
+        <!--<input name="mobile" placeholder="手机号"-->
+               <!--data-rule="required; mobile"-->
+               <!--data-rule-mobile="[/^1[3458]\d{9}$/, '请检查手机号格式']"/>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash;<input type="password" id="password" data-rule="密码: required; !digits; length[6~]"&ndash;&gt;-->
+           <!--&lt;!&ndash;data-msg-digits="{0}不能使用纯数字"&ndash;&gt;-->
+           <!--&lt;!&ndash;data-msg-length="{0}至少6位">&ndash;&gt;-->
+    <!--<div>-->
+        <!--<input type="text" name="passName" data-rule="required;number" data-rule-number="[/^[a-zA-Z0-9]*(\/[a-zA-Z0-9]*)*$/, '请输入数字或小数点']"/>-->
+
+    <!--</div>-->
+    <!--<div id="holder"></div>-->
+    <!--<div id="p2"></div>-->
+    <!--<button>提交</button>-->
+<!--</form>-->
 <div class="cities"><p title="黄浦区,卢湾区,徐汇区,长宁区,静安区,普陀区,闸北区,虹口区,杨浦区,闵行区,宝山区,嘉定区,浦东,金山区,松江区,青浦区,奉贤区,崇明县">
     黄浦区,卢湾区,徐汇区,长宁区,静安区,普陀区,闸北区,虹口区,杨浦区,闵行区,宝山区,嘉定区,浦东,金山区,松江区,青浦区,奉贤区,崇明县</p></div>
 
@@ -86,7 +93,106 @@
 <div class="list">
 <button class="hello">hello</button>
 </div>
+<div class="allCk">
+    <input onchange="changed()" type="checkbox"/>
+    <input onchange="changed()" type="checkbox"/>
+    <input onchange="changed()" type="checkbox"/>
+</div>
+全选<input onchange="changed()" id="wholeCk" type="checkbox"/>
+<button onclick="all()">allCK</button>
+<div style="display: none" class="wrongIn">必须选择一项</div>
+<form id="allradio">
+    <div>
+        <input  type="radio" name="hello" value="1"/>
+        <input  type="radio" name="hello" value="2"/>
+        <input  type="radio" name="hello" value="3"/>
+    </div>
+</form>
 
+    <div class="yes">确定</div>
+    <label class="wrongInfo">必须选择一项</label>
+
+<div style="display: none" class="zhao"></div>
+<div style="display: none" class="dialog">
+    <button class="close">关闭</button>
+</div>
+<div class="kuang">
+<table class="dataTable">
+    <tr>
+        <td width="216px">6.8</td>
+        <td width="216px">4.4</td>
+        <td width="286px" class="lessSize">上海?北京</td>
+        <td class="lessSize">约1000公里</td>
+    </tr>
+    <tr>
+        <td>6.8</td>
+        <td>4.4</td>
+        <td class="lessSize">乌鲁木齐?呼和浩特</td>
+        <td class="lessSize">约1000公里</td>
+    </tr>
+    <tr>
+        <td width="216px">6.8</td>
+        <td width="216px">4.4</td>
+        <td width="286px" class="lessSize">上海?北京</td>
+        <td class="lessSize">约1000公里</td>
+    </tr>
+    <tr>
+        <td>6.8</td>
+        <td>4.4</td>
+        <td class="lessSize">乌鲁木齐?呼和浩特</td>
+        <td class="lessSize">约1000公里</td>
+    </tr>
+    <tr>
+        <td width="216px">6.8</td>
+        <td width="216px">4.4</td>
+        <td width="286px" class="lessSize">上海?北京</td>
+        <td class="lessSize">约1000公里</td>
+    </tr>
+    <tr>
+        <td>6.8</td>
+        <td>4.4</td>
+        <td class="lessSize">乌鲁木齐?呼和浩特</td>
+        <td class="lessSize">约1000公里</td>
+    </tr>
+    <tr>
+        <td width="216px">6.8</td>
+        <td width="216px">4.4</td>
+        <td width="286px" class="lessSize">上海?北京</td>
+        <td class="lessSize">约1000公里</td>
+    </tr>
+    <tr>
+        <td>6.8</td>
+        <td>4.4</td>
+        <td class="lessSize">乌鲁木齐?呼和浩特</td>
+        <td class="lessSize">约1000公里</td>
+    </tr>
+    <tr>
+        <td width="216px">6.8</td>
+        <td width="216px">4.4</td>
+        <td width="286px" class="lessSize">上海?北京</td>
+        <td class="lessSize">约1000公里</td>
+    </tr>
+    <tr>
+        <td width="216px">6.8</td>
+        <td width="216px">4.4</td>
+        <td width="286px" class="lessSize">乌鲁木齐?呼和浩特</td>
+        <td class="lessSize">约1000公里</td>
+    </tr>
+    <tr>
+        <td width="216px">6.8</td>
+        <td width="216px">4.4</td>
+        <td width="286px" class="lessSize">上海?北京</td>
+        <td class="lessSize">约1000公里</td>
+    </tr>
+    <tr>
+        <td width="216px">6.8</td>
+        <td width="216px">4.4</td>
+        <td width="286px" class="lessSize">乌鲁木齐?呼和浩特</td>
+        <td class="lessSize">约1000公里</td>
+    </tr>
+
+</table>
+</div>
 </body>
 <script src="jquery-2.1.1.js"></script>
 <script src="jquery.validator.js"></script>

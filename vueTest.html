@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="vueTest.css" rel="stylesheet">
+</head>
+<body>
+<div v-show="helloworld==1">
+    hahaha
+</div>
+<button @click="show">click me</button>
+<button @click="show1">click you</button>
+<table class="table-bordered">
+    <thead>
+    <tr class="text-center">
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>性别</td>
+        <td>兴趣</td>
+        <td>操作</td>
+    </tr>
+    </thead>
+    <tr class="success text-center" v-for="item in list">
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.sex}}</td>
+        <td>{{item.hobby}}</td>
+        <td>
+            <button :disabled="$index==0" @click="changeLocation($index)">向上交换</button>
+        </td>
+    </tr>
+</table>
+
+<span>Message is :{{message}}</span>
+<br>
+<i @click="saveBook" :class="{'iconfont': isA,'iconfont-1': isB}">&#xe600</i>
+<input type="text" v-model="message" placeholder="edit me" lazy>
+<br>
+<input type="checkbox" id="jack" value="Jack" v-model="checkNames">
+<label for="jack">Jack</label>
+<input type="checkbox" id="john" value="John" v-model="checkNames">
+<label for="john">John</label>
+<input type="checkbox" id="mike" value="Mike" v-model="checkNames">
+<label for="mike">Mike</label>
+<br>
+<span>checked names:{{checkNames}}</span>
+<select v-model="abc">
+    <option v-for="option in options" value={{option.id}}>{{option.value}}</option>
+</select>
+<br>
+<input type="radio" id="one" value="One" v-model="picked">
+<label>One</label><br>
+<input type="radio" id="two" value="Two" v-model="picked">
+<label>Two</label><br>
+<span>Picked:{{picked}}</span>
+
+<input type="checkbox"
+       v-model="toggle"
+       :true-value="a"
+       :false-value="b"/>
+<label>{{toggle}}</label>
+<input type="checkbox" v-model="toggle1" value="aaaa"/>
+<label>{{toggle1}}</label>
+<div>{{{raw_html}}}</div>
+<div>{{message.split('').reverse().join(',')}}</div>
+<button :disabled="rest">I need a rest</button>
+
+<select v-model="selected33">
+    <!-- 对象字面量 -->
+    <option :value="abcde.number">123</option>
+</select>
+<label>{{selected33}}</label>
+
+
+<div>
+    <i :class="iconfont2" class="iconfont">&#xe601</i>
+    <input type="text"/>
+    <div>
+        <select>
+            <option>hello</option>
+        </select>
+    </div>
+</div>
+
+
+<div class="dropdown">
+    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{dropName}}
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dLabel">
+        <li @click="selectDrop($event)">hello</li>
+        <li @click="selectDrop($event)">sherry</li>
+        <li @click="selectDrop($event)">alel</li>
+        <li @click="selectDrop($event)">candy</li>
+    </ul>
+</div>
+<div id="divValue">ddddddd</div>
+<span :class="[classC,{classA:isA,classB:isB}]">hello</span>
+<div class="textOverflow" title="新增的车型要默认有序号，例：现有序号1、2、3，再新增时默认取4
+       如果现有序号1、3，再新增时默认页取4，忽略跳号。由业务手工调整">新增的车型要默认有序号，例：现有序号1、2、3，再新增时默认取4
+    如果现有序号1、3，再新增时默认页取4，忽略跳号。由业务手工调整
+</div>
+<div class="fontStyle">font Family</div>
+<div class="contradictory">helloworld</div>
+<div id="example2">
+    <my-component></my-component>
+</div>
+<!--<div class="backgroundPic"></div>-->
+<div class="checkBoxs">
+    <div v-for="box in checkboxList">
+        <input type="checkbox" value="{{box.value}}"/>{{box.name}}
+    </div>
+    <input v-model="allCk" type="checkbox" @change="allChecked" class="ckAll"/>全选
+</div>
+<div class="selectItem">
+    <a class="changeColor">hello</a>
+    <a class="changeColor">boy</a>
+    <a class="changeColor">hahaha</a>
+</div>
+<select v-model="selection">
+    <option v-for="aItem in items" value="{{1+$index}}">{{aItem}}</option>
+</select>
+<div>{{testData}}</div>
+<button @click="test">dianji</button>
+
+</body>
+<script src="jquery-2.1.1.js"></script>
+<script src="vue.js"></script>
+<script src="vueTest.js"></script>
+<script src="bootstrap.js"></script>
+</html>

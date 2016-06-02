@@ -1,0 +1,69 @@
+table{
+    width: 600px;
+}
+tr:hover{
+    background-color: gainsboro;
+    cursor:pointer;
+}
+.classA{
+    background-color: #1b6d85;
+}
+.classB{
+    color:gainsboro;
+}
+.classC{
+    font-size: 50px;
+}
+.textOverflow{
+    width:80px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_1463727778_8299334.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/font_1463727778_8299334.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/font_1463727778_8299334.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/font_1463727778_8299334.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_1463727778_8299334.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family: iconfont;
+    cursor: pointer;
+}
+.iconfont-1{
+    cursor: pointer;
+    font-family: iconfont;
+    color:red;
+}
+
+.icon-right:before { content: "\e602"; }
+.icon-tick:before { content: "\e603"; }
+.icon-arrowdowno:before { content: "\e600"; }
+.icon-arrowtopo:before { content: "\e601"; }
+.fontStyle{
+    text-shadow:0px 3px 5px #DA3737;
+    font-size: 30px;
+    font-family: "iconfont";
+
+}
+.contradictory{
+    font-size:30px;
+}
+.backgroundPic{
+    border: 1px solid grey;
+    height: 500px;
+    width:700px;
+    background: no-repeat;
+    background-image: url("b.jpg");
+    background-origin:border-box ;
+}
+.active{
+    color: #FF0000;
+}
+.changeColor:hover{
+    color:yellow;!important
+}
