@@ -61,5 +61,24 @@
         transform: translateY(-472px);
     }
 
-
+}
+#searchBox{
+    width: 300px;
+    height: 30px;
+}
+#searchButton{
+    background-color: dodgerblue;
+    color: white;
+    width: 70px;
+    height: 35px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.wholeBox{
+    width: 303px;
+    position: relative;
+    line-height: 30px;
 }
