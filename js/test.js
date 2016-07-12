@@ -4,6 +4,9 @@
 $(function () {
     var x = 0;
     var b = $(".selectOptions option:selected").text();
+    var c = function (){
+        alert("c");
+    }
     $("#optionText").html(b);
     $("button").click(function () {
         $(".user").trigger("validate");
@@ -83,6 +86,16 @@ $(function () {
            $(".wrongIn").show();
         }
     });
+    //function timeClock(){
+    //    var newClock = new Date();
+    //    $("#hour").html(newClock.getHours()+':'+newClock.getMinutes()+':'+newClock.getSeconds());
+    //};
+    //setInterval(timeClock,500);
+    var timeClock = function (){
+        var newClock = new Date();
+        $("#hour").html(newClock.toLocaleString());
+    };
+    setInterval(timeClock,500);
 });
 function all(){
     debugger;
@@ -94,5 +107,15 @@ function hello(e){
 function changed(){
     $(".wrongIn").hide();
 };
+function baidu(e){
+    e.preventDefault();
+    $(document.body).animate({scrollTop:0},500);
+
+};
+function goBottom(e){
+    e.preventDefault();
+    var winHeight = window.screen.height;
+    $(document.body).animate({scrollTop:winHeight },500);
+}
 
 

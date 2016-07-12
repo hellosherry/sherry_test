@@ -1,0 +1,191 @@
+body{
+
+}
+#goUp{
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    bottom: -80px;
+    background-color: burlywood;
+
+}
+.gotoUp{
+    transform: translate(0,-80px);
+    -webkit-transition-duration:.5s; /*过渡所需要的时间*/
+    transition-duration:.5s;
+    -webkit-transition-timing-function: ease-in; /*指定过渡函数*/
+    transition-timing-function: ease-in;
+    /*-webkit-transition-delay: .18s; !*指定开始出现的延迟时间*!*/
+    /*transition-delay:.18s;*/
+
+}
+
+@keyframes move {
+    0%{
+        transform: translateY(90px);
+    }
+
+    30%{
+        transform: translate(180px,90px);
+    }
+
+    60%{
+        transform: translate(90px,0);
+    }
+
+    90%{
+        transform: translate(90px,180px);
+    }
+    100%{
+        transform: translate(90px,90px);
+        opacity: 0;
+    }
+}
+
+#animationTest {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    margin: 20px auto;
+}
+#stop {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: orange;
+    transform: translateY(90px);
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: .2s;
+    animation-iteration-count:1;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+
+}
+.one{
+    animation-play-state:paused;
+}
+.start{
+    animation-play-state:running;!important;
+}
+
+.nav-menu {
+    display: block;
+    background: #74adaa;
+    width:950px;
+    margin: 50px auto 150px;
+}
+.nav-menu > li {
+    display: inline;
+    float:left;
+    border-right:1px solid #94c0be;
+}
+.nav-menu > li:last-child {
+    border-right: none;
+}
+.nav-menu li a {
+    color: #fff;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-transform: capitalize;
+    overflow: visible;
+    line-height: 20px;
+    font-size: 20px;
+    padding: 15px 30px 15px 31px;
+}
+.three-d {
+    /* 任务三、设置3D舞台布景 */
+
+    /*任务四、设置3D舞台布景过渡效果*/
+
+    position: relative;
+}
+
+.three-d:not(.active):hover {
+    cursor: pointer;
+}
+
+/*任务五、给不是当前状态的3D舞台的悬浮与聚焦状态设置变形效果*/
+.three-d:not(.active):hover .three-d-box,
+.three-d:not(.active):focus .three-d-box {
+
+}
+
+.three-d-box {
+    /*任务六、给3D舞台中“.three-d-box”设置过渡与变形效果*/
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    -ms-pointer-events: none;
+    -o-pointer-events: none;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*任务七、给导航设置3D前，与3D后变形效果*/
+.front {
+
+}
+
+.back {
+
+    color: #FFE7C4;
+}
+
+.front, .back {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #74adaa;
+    padding: 15px 30px 15px 31px;
+    color: white;
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    -ms-pointer-events: none;
+    -o-pointer-events: none;
+    pointer-events: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*任务八、设置导航当前状态与悬浮状态下的背景效果*/
+.nav-menu li .active .front,
+.nav-menu li .active .back,
+.nav-menu li a:hover .front,
+.nav-menu li a:hover .back {
+
+}
+.nav-menu ul {
+    position: absolute;
+    text-align: left;
+    line-height: 40px;
+    font-size: 14px;
+    width: 200px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    -webkit-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+/*任务九、显示下拉导航菜单，并其设置一个变形效果*/
+.nav-menu > li:hover ul {
+    display: block;
+}

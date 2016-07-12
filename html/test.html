@@ -2,34 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="GB2312">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title></title>
     <link href="../css/test.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<!--<form class="user">-->
+<form class="user">
 
-    <!--<div>-->
-        <!--<input name="mobile" placeholder="手机号"-->
-               <!--data-rule="required; mobile"-->
-               <!--data-rule-mobile="[/^1[3458]\d{9}$/, '请检查手机号格式']"/>-->
-    <!--</div>-->
+    <div>
+        <input name="mobile" placeholder="手机号"
+               data-rule="required; mobile"
+               data-rule-mobile="[/^1[3458]\d{9}$/, '请检查手机号格式']"/>
+    </div>
 
-    <!--&lt;!&ndash;<input type="password" id="password" data-rule="密码: required; !digits; length[6~]"&ndash;&gt;-->
-           <!--&lt;!&ndash;data-msg-digits="{0}不能使用纯数字"&ndash;&gt;-->
-           <!--&lt;!&ndash;data-msg-length="{0}至少6位">&ndash;&gt;-->
-    <!--<div>-->
-        <!--<input type="text" name="passName" data-rule="required;number" data-rule-number="[/^[a-zA-Z0-9]*(\/[a-zA-Z0-9]*)*$/, '请输入数字或小数点']"/>-->
+    <!--<input type="password" id="password" data-rule="密码: required; !digits; length[6~]"-->
+           <!--data-msg-digits="{0}不能使用纯数字"-->
+           <!--data-msg-length="{0}至少6位">-->
+    <div>
+        <input type="text" name="passName" data-rule="required;number" data-rule-number="[/^[a-zA-Z0-9]*(\/[a-zA-Z0-9]*)*$/, '请输入数字或小数点']"/>
 
-    <!--</div>-->
-    <!--<div id="holder"></div>-->
-    <!--<div id="p2"></div>-->
-    <!--<button>提交</button>-->
-<!--</form>-->
+    </div>
+    <div id="holder"></div>
+    <div id="p2"></div>
+    <button>提交</button>
+</form>
+<div class="gotoBottom" onclick="goBottom(event)" style="border: 1px solid;width: 50px;height: 30px">至底部</div>
 <div class="cities"><p title="黄浦区,卢湾区,徐汇区,长宁区,静安区,普陀区,闸北区,虹口区,杨浦区,闵行区,宝山区,嘉定区,浦东,金山区,松江区,青浦区,奉贤区,崇明县">
     黄浦区,卢湾区,徐汇区,长宁区,静安区,普陀区,闸北区,虹口区,杨浦区,闵行区,宝山区,嘉定区,浦东,金山区,松江区,青浦区,奉贤区,崇明县</p></div>
 
 <span id="showPic">show picture</span>
-<img src="b.jpg" style="display: none">
+<img src="../image/b.jpg">
 
 <div id="div#">
     <input type="text" id="inputId"/>
@@ -195,11 +197,14 @@
 </div>
 <div class="wholeBox">
     <input type="text" id="searchBox"/>
-    <div id="searchButton">百度一下</div>
+    <div id="searchButton" onclick="baidu(event)">百度一下</div>
 </div>
+
+<div id="hour"></div>
+
 </body>
-<script src="jquery-2.1.1.js"></script>
-<script src="jquery.validator.js"></script>
-<script src="test.js"></script>
-<script src="US.js"></script>
+<script src="../js/jquery-2.1.1.js"></script>
+<script src="../js/jquery.validator.js"></script>
+<script src="../js/test.js"></script>
+<script src="../js/US.js"></script>
 </html>
